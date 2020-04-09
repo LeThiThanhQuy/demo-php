@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $description = $_POST["description"];
     $price = $_POST["price"];
     $discountPercent = $_POST["discount_percent"];
-    $discountAmount = $price * $discountPercent * 0.1;
+    $discountAmount = $price * $discountPercent * 0.01;
     $discountPrice = $price - $discountAmount;
 }
 ?>
